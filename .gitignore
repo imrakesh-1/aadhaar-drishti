@@ -7,10 +7,9 @@ env/
 venv/
 ENV/
 
-# Data Files (CRITICAL: Do not upload large UIDAI data to public GitHub)
-api_data_aadhar_*/
+# Data Files (Included for Streamlit Cloud deployment)
+# api_data_aadhar_*/ removed from ignore
 *.zip
-*.csv
 eda_outputs/
 
 # OS
