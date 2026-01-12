@@ -183,18 +183,23 @@ class AadhaarBrain:
             # Final fallback: strip and try again if still some NaT
             df = df.dropna(subset=['date'])
 
-        # Calculate Total Column
+        # Calculate Total Column Safely
+        cols_to_sum = []
         if dtype == 'enrolment':
-            cols = ['age_0_5', 'age_5_17', 'age_18_greater']
+            target_cols = ['age_0_5', 'age_5_17', 'age_18_greater']
         else: # update
-            cols = [c for c in df.columns if 'age' in c]
+            target_cols = [c for c in df.columns if 'age' in c]
         
-        # Ensure numeric before sum
-        for c in cols:
+        # Only sum columns that actually exist in the dataframe
+        for c in target_cols:
             if c in df.columns:
                 df[c] = pd.to_numeric(df[c], errors='coerce').fillna(0)
+                cols_to_sum.append(c)
         
-        df['total'] = df[cols].sum(axis=1) if cols else 0
+        if cols_to_sum:
+            df['total'] = df[cols_to_sum].sum(axis=1)
+        else:
+            df['total'] = 0
             
         return df
 
