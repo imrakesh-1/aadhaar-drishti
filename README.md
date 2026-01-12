@@ -10,6 +10,12 @@ Aadhaar Drishti is an interactive command center designed to optimize Indian dis
 - **Anomaly Hunter**: Built-in `IsolationForest` (Unsupervised ML) to detect "hotspots" and operational irregularities.
 - **Infrastructure Allocator**: Predictive logic to calculate Biometric Kit and Staff requirements based on projected growth.
 
+## 🧪 Research & Development
+The repository includes a `research/` directory containing the standalone scripts used during the engineering phase:
+- **Validation**: Scripts for multi-pass State/District cleaning audits (`validate_states.py`, `analyze_districts.py`).
+- **Prototypes**: Original logic for the anomaly detection model and seasonal trend analysis.
+- **Audits**: Verification tools used to ensure zero duplicates remained in the final dataset.
+
 ## 📈 Data Insights & Stats 
 *(Extracted from live dashboard analysis)*
 

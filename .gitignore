@@ -7,24 +7,9 @@ env/
 venv/
 ENV/
 
+
+
 # Data Files (Included for Streamlit Cloud deployment)
 # api_data_aadhar_*/ removed from ignore
 *.zip
 eda_outputs/
-
-# OS
-.DS_Store
-.vscode/
-
-# Project Artifacts
-submission.md
-walkthrough.md
-task.md
-implementation_plan.md
-debug_*.py
-validate_*.py
-verify_*.py
-analyze_*.py
-recheck_*.py
-find_*.py
-check_*.py
