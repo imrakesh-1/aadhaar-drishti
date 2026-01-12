@@ -1,6 +1,8 @@
 # Aadhaar Drishti 👁️
 **AI-Driven Operational Intelligence for UIDAI Governance**
 
+**Participant**: Rakesh Mondal (IIT Madras) | **Team ID**: UIDAI_7034
+
 Aadhaar Drishti is an interactive command center designed to optimize Indian district-level operations through automated anomaly detection and predictive resource allocation.
 
 ## 🚀 Key Features
