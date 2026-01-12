@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Data Files (CRITICAL: Do not upload large UIDAI data to public GitHub)
+api_data_aadhar_*/
+*.zip
+*.csv
+eda_outputs/
+
+# OS
+.DS_Store
+.vscode/
+
+# Project Artifacts
+submission.md
+walkthrough.md
+task.md
+implementation_plan.md
+debug_*.py
+validate_*.py
+verify_*.py
+analyze_*.py
+recheck_*.py
+find_*.py
+check_*.py
